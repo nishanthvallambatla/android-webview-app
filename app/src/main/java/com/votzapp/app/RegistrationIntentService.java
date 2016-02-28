@@ -42,7 +42,7 @@ public class RegistrationIntentService extends IntentService {
     private static final String TAG = "RegIntentService";
     private static final String[] TOPICS = {"global"};
 
-    private static final String REGISTER_URL = "http://192.168.1.37:3000/devices/get_token";
+    private static final String REGISTER_URL = "https://www.votzapp.com/devices/get_token";
 
     private static final String KEY_TOKEN = "gcm_token";
 

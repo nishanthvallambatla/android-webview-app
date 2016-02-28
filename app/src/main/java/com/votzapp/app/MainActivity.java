@@ -90,7 +90,7 @@ public class MainActivity extends Activity {
         mWebView.getSettings().setDomStorageEnabled(true);
         mWebView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
         mWebView.setScrollbarFadingEnabled(false);
-        mWebView.loadUrl("http://192.168.1.37:3000/users/sign_in");
+        mWebView.loadUrl("https://www.votzapp.com/users/sign_in");
 
 
 
