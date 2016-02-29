@@ -1,6 +1,5 @@
 package com.votzapp.app;
 
-import android.content.Intent;
 import android.net.Uri;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -14,6 +13,6 @@ public class MyAppWebViewClient extends WebViewClient {
         }
 
         view.loadUrl(url);
-        return false;
+        return true;
     }
 }

@@ -4,8 +4,6 @@ import android.util.Log;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import java.io.File;
-
 
 public class NoErrorWebViewClient extends WebViewClient {
     @Override
