@@ -25,24 +25,6 @@ public class MainActivity extends Activity {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     private WebView mWebView;
 
     private ProgressDialog progress;
@@ -55,17 +37,15 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
 
-
-
-
-
         mWebView = (WebView) findViewById(R.id.activity_main_webview);
+
         mWebView.getSettings().setLoadWithOverviewMode(true);
         mWebView.getSettings().setJavaScriptEnabled(true);
         mWebView.getSettings().setUseWideViewPort(true);
         mWebView.getSettings().setDomStorageEnabled(true);
         mWebView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
         mWebView.setScrollbarFadingEnabled(false);
+       //calling url when app opens
         mWebView.loadUrl("https://www.votzapp.com/users/sign_in");
 
 
@@ -96,68 +76,16 @@ public class MainActivity extends Activity {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
         if (checkPlayServices()) {
             // Start IntentService to register this application with GCM.
             Intent intent = new Intent(this, RegistrationIntentService.class);
             startService(intent);
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
 
-
-
-
-
-
-
+    //to show the progressDialog till webpage loads
     public void showProgressDialog(final String msg) {
 
         runOnUiThread(new Runnable() {

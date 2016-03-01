@@ -6,6 +6,8 @@ import android.webkit.WebViewClient;
 
 public class MyAppWebViewClient extends WebViewClient {
 
+
+    //To prevent the default browser action
     @Override
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
         if (Uri.parse(url).getHost().endsWith("votzapp.com")) {

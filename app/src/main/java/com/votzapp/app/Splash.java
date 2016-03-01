@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+
+//To show the splash screen before the web loads
 public class Splash extends Activity {
 
     @Override

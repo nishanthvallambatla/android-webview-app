@@ -39,6 +39,7 @@ public class MyGcmListenerService extends GcmListenerService {
      *             For Set of keys use data.keySet().
      */
     // [START receive_message]
+    //And show mobile notification
     @Override
     public void onMessageReceived(String from, Bundle data) {
         String body = data.getString("body");

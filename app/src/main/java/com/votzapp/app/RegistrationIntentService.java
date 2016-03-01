@@ -101,9 +101,10 @@ public class RegistrationIntentService extends IntentService {
      * @param token The new token.
      */
     private void sendRegistrationToServer(String token, String email) {
-        // Add custom implementation, as needed.
+        // Adding custom implementation
         OkHttpClient client = new OkHttpClient();
 
+        //Sending both GCM_TOKEN and EMAIL to the server
         RequestBody requestBody = new FormEncodingBuilder()
                 .add(KEY_TOKEN, token)
                 .add(EMAIL, email)
